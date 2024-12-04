@@ -1,22 +1,21 @@
 export class Product {
-  #price;
 
   constructor(name, amount, price) {
     this.name = name;
     this.amount = amount;
-    this.#price = price;
+    this.price = price;
   }
 
   getPrice() {
-    return this.#price;
+    return this.price;
   }
 
   setPrice(price) {
-    this.#price = price;
+    this.price = price;
   }
 
   calculateTotal() {
-    return this.amount * this.#price;
+    return this.amount * this.price;
   }
 
   getAllInfo() {
